@@ -71,3 +71,6 @@ int main(int argc, char const *argv[]) {
 }
 
 ```
+
+For a complete example see the example folder.
+

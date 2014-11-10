@@ -16,8 +16,10 @@ Unix/Macintosh:
 gcc -o testerino_example example/main.c example/sample_tests.c src/testerino.c
 ```
 
+### How to create Tests:
 
 ```c
+
 
 /**
  * tests are defined by being a function returning void and accepting a
@@ -50,3 +52,22 @@ void this_is_a_unit_test(struct test *t) {
 
 ```
 
+### How to run tests:
+
+```c
+
+
+int main(int argc, char const *argv[]) {
+  /* Create a test suite */
+  struct test_suite *s = NULL;
+  create_test_suite(&s);
+  /* Add your test function to the suite */
+  suite_add_test(s, this_is_a_unit_test);
+  /* Run the tests */
+  suite_run_all_tests(s);
+  /* cleanup */
+  free_suite(s);
+  return 0;
+}
+
+```

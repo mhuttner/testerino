@@ -1,8 +1,10 @@
 #include <stdio.h>
 #include "../src/testerino.h"
+
 #include "sample_tests.h"
 
 int main(int argc, char const *argv[]) {
+
   struct test_suite *s = NULL;
   create_test_suite(&s);
   suite_add_test(s, test_nothing);

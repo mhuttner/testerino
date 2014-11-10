@@ -3,9 +3,11 @@ testerino
 
 Simple unit testing framework for C
 
-### To build the example:
-
+### How to use:
 The testerino framework simply uses two small C files you can build with your project.
+Simply include testerino.h and testerino.c into your build and you are good to go.  
+
+### To build the example:
 
 To compile the example with gcc simply run:
   
